@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="/assets/styles.css" type="text/css">
+</head>
+<body>
+  <% include partials/nav.ejs %>
+  <h1>Contact Us</h1>
+  <p>Come work with the master ninjas!</p>
+
+  <form action="/contact" method="POST" id="contact-form">
+    <label for="who">Who do you wanna contact ?</label>
+    <input type="text" name="who" value="<%= qs.person %>">
+    <label for="department">Which department ?</label>
+    <input type="text" name="department" value="<%= qs.dept %>">
+    <label for="email">What's your email, mate ?</label>
+    <input type="email" name="email" value="<%= qs.email %>">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
