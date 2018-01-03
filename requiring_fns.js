@@ -1,5 +1,5 @@
 // Requiring & calling functions from modules
-var stuff = require('./stuff');
+var stuff = require('./myModules/stuff');
 
 console.log(stuff.counter(["Aswin", "Ashok", "Sherfin"]));
 console.log(stuff.adder(3,6));
